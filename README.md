@@ -6,5 +6,6 @@
 
 ```bash
 # Build CloudFormation Template using CDK
+
 $ > yarn build
 ```
