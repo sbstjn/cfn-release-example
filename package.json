@@ -1,0 +1,21 @@
+{
+  "name": "cfn-release-example",
+  "private": "true",
+  "license": "MIT",
+  "version": "0.1.0",
+  "bin": {
+    "cfn-release-example": "bin/cfn-release-example.js"
+  },
+  "scripts": {
+    "build": "cdk synth --path-metadata false --version-reporting false --asset-metadata false --output cdk.out",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-s3": "^1.73.0",
+    "@aws-cdk/core": "1.73.0",
+    "@types/node": "10.17.27",
+    "aws-cdk": "1.73.0",
+    "ts-node": "^8.1.0",
+    "typescript": "~3.9.7"
+  }
+}
