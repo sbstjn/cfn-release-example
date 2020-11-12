@@ -17,3 +17,7 @@ jobs:
         node-version: '12'
     - run: yarn
     - run: yarn build
+    - uses: actions/upload-artifact@v2
+      with:
+        name: outputs
+        path: cdk.out/**.*
