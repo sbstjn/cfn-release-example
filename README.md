@@ -5,6 +5,8 @@
 
 > Example project for running **Continuous Integration** and **Continuous Deployment** for CloudFormation Templates using the AWS CDK and GitHub Workflows.
 
+**tl;dr:** _Run CI/CD with GitHub Actions for CloudFormation Templates and the CDK. Use git tags to deploy static CloudFormation templates to GitHub Releases and an S3 Bucket._
+
 The [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) is great to create, maintain, and deploy your AWS infrastructure with code. You can use it to _just_ create raw CloudFormation templates, as well. Together with GitHub Actions, you can run a pretty neat pipeline for your CloudFormation Templates.
 
 If you store your CloudFormation Templates in an S3 Bucket, you can easily re-use them. For example, in **AWS Service Catalog**, **AWS CloudFormation StackSets**, or to create [_Launch Stack_ Buttons](https://aws.amazon.com/blogs/devops/construct-your-own-launch-stack-url/).
