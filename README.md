@@ -21,7 +21,7 @@ A [GitHub Action in `release.yml`](.github/workflows/release.yml) creates a **Gi
 
 ### Deployment
 
-The static **CloudFormation Template** is uploaded to the **GitHub Release** and your **S3 Bucket**.
+The static **CloudFormation Template** is uploaded to the **GitHub Release** and your **S3 Bucket** using a prefix like `refs/tags/v0.1.3/`.
 
 ## Configuration
 
@@ -31,7 +31,3 @@ You need to set the following `secrets` for your repository:
 - `AWS_BUCKET_REGION`
 - `AWS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
-
-## Release
-
-This workflow creates a **GitHub Release** (like `v0.4.0`) and attaches the static YAML file as an artifact. Afterwards, the static CloudFormation Template is copied to an S3 Bucket with a preflix like `refs/tags/v0.1.3/`.
