@@ -9,7 +9,7 @@ When orchestrating AWS services, you might end up needing a static CloudFormatio
 
 ## Workflow
 
-Use the the **CDK** to create a CloudFormation Stack, manage your source code with Pull Request, and tag your code with the default `git` command or use the GitHub interface.
+Use the the **CDK** to create a CloudFormation Stack.
 
 ### Integration
 
@@ -21,7 +21,7 @@ A [GitHub Action in `release.yml`](.github/workflows/release.yml) creates a **Gi
 
 ### Deployment
 
-The static **CloudFormation Template** is uploaded to the **GitHub Release** and your **S3 Bucket** using a prefix like `refs/tags/v0.1.3/`.
+The static **YAML** file is uploaded to the **GitHub Release** and your **S3 Bucket**.
 
 ## Configuration
 
