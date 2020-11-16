@@ -3,13 +3,13 @@
 [![MIT License](https://badgen.now.sh/badge/License/MIT/purple?1)](https://github.com/sbstjn/cfn-release-example/blob/master/LICENSE.md)
 [![MIT License](https://badgen.net/github/release/sbstjn/cfn-release-example?1)](https://github.com/sbstjn/cfn-release-example/releases)
 
-> Run **Continuous Integration** and **Continuous Deployment** with [GitHub Actions](actions) for CloudFormation Templates and the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/). Use `tags` to create [GitHub Releases](releases) and upload the static YML files to S3 for AWS integrations.
+> Run **Continuous Integration** and **Continuous Deployment** with [GitHub Actions](actions) for CloudFormation Templates and the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/). Use `git tags` to manage [GitHub Releases](releases) and upload static YAML files to S3 for AWS integrations.
 
-When orchestrating AWS service, you sometimes end up need a static CloudFormation Template stored in an S3 Buckets. The basic tools for CloudFormations can be hard to tackle and building a pipeline to manage static files, is boring as hell. Thanks to the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) and GitHub Actions, you can build a pretty neat pipeline to deploy static CloudFormation Templates.
-
-_If you store your CloudFormation Templates in an S3 Bucket, you can easily re-use them. For example, in **AWS Service Catalog**, **AWS CloudFormation StackSets**, or to create [*Launch Stack* Buttons](https://aws.amazon.com/blogs/devops/construct-your-own-launch-stack-url/)._
+When orchestrating AWS services, you might end up needing a static CloudFormation Template stored in an S3 Bucket. The basic tools for CloudFormation Templates can be frustrating and building a pipeline to manage static files, is boring as hell. Thanks to the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) and GitHub Actions, you can run a pretty neat pipeline to deploy static CloudFormation Templates.
 
 ## Workflow
+
+Use the the **CDK** to create a CloudFormation Stack, manage your source code with Pull Request, and tag your code with the default `git` command or use the GitHub interface.
 
 ### Integration
 
@@ -32,13 +32,6 @@ You need to set the following `secrets` for your repository:
 - `AWS_KEY_ID`
 - `AWS_SECRET_ACCESS_KEY`
 
-## Local Development
+## Release
 
-```bash
-# Create new version using NPM and create git tag
-$ > npm version minor
-v0.1.1
-
-# Push tag to GitHub
-$ > git push origin --tags
-```
+This workflow creates a **GitHub Release** (like `v0.4.0`) and attaches the static YAML file as an artifact. Afterwards, the static CloudFormation Template is copied to an S3 Bucket with a preflix like `refs/tags/v0.1.3/`.
