@@ -5,9 +5,9 @@
 
 > Run **Continuous Integration** and **Continuous Deployment** with [GitHub Actions](actions) for CloudFormation Templates and the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/). Use `git tags` to manage [GitHub Releases](releases) and upload static YAML files to S3 for AWS integrations.
 
-**tl;dr:** _Use the AWS CDK to build a static YAML file and deploy it to S3._
-
 When orchestrating AWS services, you might end up needing a static CloudFormation Template stored in an S3 Bucket. The basic tools for CloudFormation Templates can be frustrating and building a pipeline to manage static files, is boring as hell. Thanks to the [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) and GitHub Actions, you can run a pretty neat pipeline to deploy static CloudFormation Templates.
+
+**tl;dr:** _Use the AWS CDK to build a static YAML file and deploy it to S3._
 
 ## Workflow
 
