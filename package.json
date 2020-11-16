@@ -2,7 +2,7 @@
   "name": "cfn-release-example",
   "private": "true",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "bin": {
     "cfn-release-example": "bin/cfn-release-example.js"
   },
