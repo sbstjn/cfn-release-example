@@ -1,7 +1,7 @@
 # Publish CloudFormation Templates with CDK
 
-[![MIT License](https://badgen.now.sh/badge/License/MIT/blue)](https://github.com/sbstjn/cfn-release-example/blob/master/LICENSE.md)
-[![MIT License](https://badgen.net/github/release/sbstjn/cfn-release-example/stable)](https://github.com/sbstjn/cfn-release-example/releases)
+[![MIT License](https://badgen.now.sh/badge/License/MIT/purple?1)](https://github.com/sbstjn/cfn-release-example/blob/master/LICENSE.md)
+[![MIT License](https://badgen.net/github/release/sbstjn/cfn-release-example?1)](https://github.com/sbstjn/cfn-release-example/releases)
 
 > Example project for running **Continuous Integration** and **Continuous Deployment** for CloudFormation Templates using the AWS CDK and GitHub Workflows.
 
