@@ -20,7 +20,7 @@ A [GitHub Action in `release.yml`](.github/workflows/release.yml) creates a **Gi
 
 ### Deployment
 
-After a release is created, the built **CloudFormation Template** is uploaded to the **GitHub Release** and your **S3 Bucket**.
+The static **CloudFormation Template** is uploaded to the **GitHub Release** and your **S3 Bucket**.
 
 ## Configuration
 
