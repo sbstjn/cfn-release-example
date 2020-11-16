@@ -74,4 +74,5 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         state: 'success'
+        target_url: https://cfn-releases-example.s3.eu-central-1.amazonaws.com/${{steps.S3.outputs.object_key}}
         deployment_id: ${{ steps.test.outputs.deployment_id }}
