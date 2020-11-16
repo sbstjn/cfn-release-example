@@ -56,7 +56,7 @@ jobs:
       id: test
       with:
         token: ${{ secrets.GITHUB_TOKEN}}
-        environment: release
+        environment: production
 
     - uses: shallwefootball/s3-upload-action@master
       name: Upload S3
