@@ -1,11 +1,3 @@
-# CFN Release Example
+# Deploy CloudFormation Templates with CDK
 
-> Build CloudFormation Templates using the AWS CDK and publish the YAML files as GitHub Releases.
-
-## Commands
-
-```bash
-# Build CloudFormation Template using CDK
-
-$ > yarn build
-```
+> Example for running Continuous Integration and Continuous Deployment for CloudFormation Templates using the AWS CDK and GitHub Workflows.
